@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Da Trex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>DaTrex</h1>
+
+    <input type="text" placeholder="Search memes..." id="searchBox" onkeyup="searchMeme()">
+
+    <button id="modeToggle" onclick="toggleMode()">Dark Mode</button>
+</header>
+
+<div class="container">
+
+    <img id="meme-img" src="images/meme1.jpg" alt="Meme">
+
+    <p id="caption">Funny Meme Caption</p>
+
+    <div class="btn-group">
+        <button onclick="prevMeme()">⬅ Previous</button>
+        <button onclick="nextMeme()">Next ➡</button>
+    </div>
+
+    <div class="extra-buttons">
+        <button onclick="likeMeme()"> Like</button>
+    </div>
+
+    <span id="like-count">0 Likes</span>
+
+    <div class="upload">
+        <input type="file" id="uploadInput" accept="image/*" onchange="uploadMeme()">
+        <label for="uploadInput"> Upload Your Meme</label>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
